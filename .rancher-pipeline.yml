@@ -14,10 +14,10 @@ stages:
         pushRemote: true
         registry: harbor.mihoyo.com
       env:
-        PLUGIN_MIRROR: https://d6izfrb6.mirror.aliyuncs.com
+        PLUGIN_DEBUG: true
 - name: Deploy
   steps:
     - applyYamlConfig:
         path: ./deployment.yml
 
-timeout: 6
+timeout: 60000
