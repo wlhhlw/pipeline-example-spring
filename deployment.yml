@@ -31,7 +31,7 @@ spec:
     spec:
       imagePullSecrets:
 #      - name: pipeline-docker-registry
-      - name: docker-registry
+      - name: test
       initContainers:
 #      - image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
       - image: ${CICD_IMAGE}:${CICD_GIT_BRANCH}

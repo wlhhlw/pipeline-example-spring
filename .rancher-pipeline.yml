@@ -12,7 +12,7 @@ stages:
 #        tag: fullj/pipeline-example-spring:${CICD_EXECUTION_SEQUENCE}
         tag: fullj/pipeline-example-spring:${CICD_GIT_BRANCH}
         pushRemote: true
-        registry: registry.cn-hangzhou.aliyuncs.com
+        registry: harbor.mihoyo.com
       env:
         PLUGIN_MIRROR: https://d6izfrb6.mirror.aliyuncs.com
 - name: Deploy
